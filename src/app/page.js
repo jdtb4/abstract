@@ -1,21 +1,71 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
-    <div className="bg-indigo-200 flex flex-col items-center">
-      <p className="text-7xl font-semibold pt-24 pb-10">How can we help?</p>
-      <div className="flex items-center text-xl pb-28">
-        <input
-          className="border border-black w-[45rem] h-16 rounded pl-4 pr-4"
-          type="text"
-          placeholder="Search"
-        />
-        <svg
-          className=" ml-[-2.5rem]"
-          xmlns="http://www.w3.org/2000/svg"
-          height="1em"
-          viewBox="0 0 448 512"
-        >
-          <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
-        </svg>
+    <div className="p-20 items-center">
+      <div className="grid grid-cols-2">
+        <div className="flex pr-6 mb-12">
+          <Image src="/img/1.png" width={40} height={40} alt="abstract" />
+          <div className=" flex flex-col gap-4">
+            <p className="text-2xl font-bold">Using Abstract</p>
+            <p className="text-xl">
+              Abstract lets you manage, version, and document your designs in
+              one place.
+            </p>
+            <a className="text-lg">Learn More</a>
+          </div>
+        </div>
+
+        <div className="flex pr-6 mb-12">
+          <Image src="/img/2.png" width={40} height={40} alt="abstract" />
+          <div className="flex flex-col gap-4">
+            <p className="text-2xl font-bold">
+              Manage organizations, teams, and projects
+            </p>
+            <p className="text-xl">
+              Use Abstract organizations, teams, and projects to organize your
+              people and your work.
+            </p>
+            <a className="text-lg">Learn More</a>
+          </div>
+        </div>
+
+        <div className="flex pr-6 mb-12">
+          <Image src="/img/3.png" width={40} height={40} alt="abstract" />
+          <div className="flex flex-col gap-4">
+            <p className="text-2xl font-bold">Authenticate to Abstract</p>
+            <p className="text-xl">
+              Set up and configure SSO, SCIM, and Just-in-Time provisioning.
+            </p>
+            <a className="text-lg">Learn More</a>
+          </div>
+        </div>
+
+        <div className="flex pr-6 mb-12">
+          <Image src="/img/4.png" width={40} height={40} alt="abstract" />
+          <div className="flex flex-col gap-4">
+            <p className="text-2xl font-bold">Manage your account</p>
+            <p className="text-xl">
+              Configure your account settings, such as your email, profile
+              details, and password.
+            </p>
+            <a className="text-lg">Learn More</a>
+          </div>
+        </div>
+
+        <div className="flex pr-6 mb-12">
+          <Image src="/img/5.png" width={40} height={40} alt="abstract" />
+          <div>
+            <p>Manage your billing</p>
+            <p>Change subscriptions and payment details.</p>
+            <a>Learn More</a>
+          </div>
+        </div>
+        <li>
+          <p>Abstract support</p>
+          <p>Get in touch with a human.</p>
+          <a>Learn More</a>
+        </li>
       </div>
     </div>
   );

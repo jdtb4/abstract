@@ -1,5 +1,6 @@
 import "./globals.css";
 import Header from "../components/Header";
+import Search from "@/components/Search";
 
 export const metadata = {
   title: "Abstract",
@@ -11,6 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Header />
+        <Search />
         {children}
       </body>
     </html>

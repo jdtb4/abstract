@@ -19,7 +19,7 @@ const Header = () => {
         <button className="text-white text-2xl p-2 px-6 border rounded-lg">
           Submit a request
         </button>
-        <button className="bg-indigo-600 text-white text-2xl p-2 px-6 rounded-lg hover:bg-white hover:text-black">
+        <button className="bg-indigo-600 text-white text-2xl p-2 px-8 rounded-lg hover:bg-white hover:text-black">
           Sign in
         </button>
       </div>
